@@ -1,0 +1,48 @@
+<!doctype html> 
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+	  <meta name="description" content="Just for test">
+	  <meta name="keywords" content="lab2">
+    <title> Lab 2</title>
+  </head>
+  <body>
+	  <script>
+	    window.alert("Welcome to Shopping Cart Simulator 2020!");
+      //Alert will display a dialogue box "Welcome to Shopping Cart Simulator 2020! and wait for the user to press OK, before continuing
+      var FirstName = window.prompt("First Name: example input is “John”");
+      //Prompt will display a dialogue box, take user input, and return the value
+      var LastName = window.prompt("Last Name: example input is “Smith”");
+      console.log("Customer Full Name: " + FirstName + " " + LastName);
+      //output Customer Full Name: FirstName and LastName
+      var Email = window.prompt("Email: example input is “student@fanshaweonline.ca”");
+      console.log("Email: " + Email);
+      var Phone = window.prompt("Phone: example input is “(555)-555-5555”:");
+      console.log("Phone: " + Phone);
+      var HST_TAX = (0.13);
+      //Declare HST_TAX = 13%
+      var unit = ("$");
+      //Declare "unit" = "$"
+      var item1 = parseFloat(window.prompt("Enter the price of item 1"));
+      //"parseFloat" converts the string into a whole number (integer)
+      console.log("Item 1: " + unit + item1);
+      //out put item1's price in $
+      var item2 = parseFloat(window.prompt("Enter the price of item 2"));
+      console.log("Item 2: " + unit + item2);
+      var item3 = parseFloat(window.prompt("Enter the price of item 3"));
+      console.log("Item 3: " + unit + item3);
+      var subtotal = (item1 + item2 + item3);
+      //Declare to calculate the sum of items
+      console.log(("Subtotal: $") + subtotal);
+      //out put subtotal
+      var tax = HST_TAX * subtotal;
+      //delcare to calculate tax
+      console.log(("Tax: " + unit) + tax);
+      //out put tax
+      var total = (subtotal + tax);
+      //declare to calculate "TotaL"
+      console.log(("Total: " + unit) + total);
+      //out put total price
+	  </script>
+  </body>
+</html>
